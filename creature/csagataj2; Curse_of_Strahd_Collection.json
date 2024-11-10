@@ -1,0 +1,1347 @@
+{
+	"siteVersion": "1.210.13",
+	"_meta": {
+		"sources": [
+			{
+				"json": "CurseofStrahdCollection",
+				"abbreviation": "CoSC",
+				"full": "Curse of Strahd Collection",
+				"version": "0.1",
+				"color": "24932d",
+				"authors": [
+					"various"
+				],
+				"convertedBy": [
+					"csagataj2"
+				]
+			}
+		],
+		"dateAdded": 1731234550,
+		"dateLastModified": 1731234550,
+		"edition": "classic"
+	},
+	"legendaryGroup": [
+		{
+			"name": "Strahd, the Mage",
+			"source": "CurseofStrahdCollection",
+			"page": 240,
+			"lairActions": [
+				"While Strahd is in Castle Ravenloft, he can take lair actions as long as he isn't {@condition incapacitated}.",
+				"On initiative count 20 (losing initiative ties), Strahd can take one of the following lair action options, or forgo using any of them in that round:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Scatter",
+							"entries": [
+								"The air quivers around up to three creatures of Strahd's choice that he can see within 60 feet. Each creature must succeed on a {@dc 20} Wisdom saving throw or be teleported to an unoccupied space on the ground or floor that Strahd can see within 60 feet of him."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Fiery Sphere",
+							"entries": [
+								"A 10-foot diameter sphere of fire appears in an unoccupied space of Strahd's choice within 60 feet that he can see until initiative count 20 on the following round. Any creature that starts its turn within 5 feet of the sphere must succeed on a {@dc 20} Dexterity saving throw or take {@h}14 ({@damage 4d6}) fire damage. The sphere ignites flammable objects not being worn or carried, and it sheds bright light in a 30-foot radius and dim light for an additional 30 feet."
+							]
+						}
+					]
+				},
+				"While outdoors, if the players have not yet reconsecrated the Swamp Fane, Strahd can take lair actions as long as he isn't {@condition incapacitated}.",
+				"On initiative count 20 (losing initiative ties), Strahd can take one of the following lair action options, or forgo using any of them in that round:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Control Water (requires Swamp Fane)",
+							"entries": [
+								"Strahd casts or uses {@spell control water} without components or concentration."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Fog Cloud (requires Swamp Fane)",
+							"entries": [
+								"Strahd casts {@spell fog cloud} at 5th level without components or concentration. While the fog remains, Strahd has blindsight out to its edges."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Strahd, the Soldier",
+			"source": "CurseofStrahdCollection",
+			"page": 240,
+			"lairActions": [
+				"While Strahd is in Castle Ravenloft, he can take lair actions as long as he isn't {@condition incapacitated}.",
+				"On initiative count 20 (losing initiative ties), Strahd can take one of the following lair action options, or forgo using any of them in that round:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Ghostly Hands",
+							"entries": [
+								"All non-undead creatures in a 10-foot square starting from a point within 60 feet must succeed on a {@dc 20} Strength saving throw or be {@condition restrained} by grasping ghostly hands until initiative count 20 on the following round"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Fog Bank",
+							"entries": [
+								"A 40-foot radius sphere of fog appears centered on a point within 60 feet of Strahd that he can see. The sphere spreads around corners, and its area is heavily obscured. It lasts until initiative count 20 on the following round or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it. When the fog appears, Strahd can immediately take the Hide action as a reaction and move up to his speed."
+							]
+						}
+					]
+				},
+				"While outdoors, if the players have not yet reconsecrated the Forest Fane, Strahd can take lair actions as long as he isn't {@condition incapacitated}.",
+				"On initiative count 20 (losing initiative ties), Strahd can take one of the following lair action options, or forgo using any of them in that round:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Plant Growth (requires Forest Fane)",
+							"entries": [
+								"Strahd casts {@spell plant growth} without components or concentration."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Wrath of Nature (requires Forest Fane)",
+							"entries": [
+								"Strahd casts {@spell wrath of nature} without components or concentration. When he casts it in this way, Strahd can’t use the spell’s {@b rocks} effect."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Strahd, the Vampire",
+			"source": "CurseofStrahdCollection",
+			"page": 240,
+			"lairActions": [
+				"While Strahd is in Castle Ravenloft, he can take lair actions as long as he isn't {@condition incapacitated}.",
+				"On initiative count 20 (losing initiative ties), Strahd can take one of the following lair action options, or forgo using any of them in that round:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Deluge of Blood",
+							"entries": [
+								"A wave of blood explodes outward from a point Strahd can see within 60 feet. Each creature within 10 feet of that point must make a {@dc 20}  Strength saving throw. On a failure, a creature takes 7 ({@damage 2d6}) bludgeoning damage and is pushed 10 feet away from the point and knocked {@condition prone}. The creature is also {@condition blinded} until initiative count 20 on the next round."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Wails of the Damned",
+							"entries": [
+								"Strahd summons an ethereal torrent of shrieking specters in a 5-foot radius centered on a point within 60 feet that he can see. Each creature in that area must make a {@dc 20} Wisdom saving throw or be frightened of Strahd until initiative count 20 on the next round. A creature frightened in this way is {@condition paralyzed}."
+							]
+						}
+					]
+				},
+				"While outdoors, if the players have not yet reconsecrated the Mountain Fane, Strahd can take lair actions as long as he isn't {@condition incapacitated}.",
+				"On initiative count 20 (losing initiative ties), Strahd can take one of the following lair action options, or forgo using any of them in that round:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Change Weather (requires Mountain Fane)",
+							"entries": [
+								"Strahd casts or uses {@spell control weather} as an action without concentration or components. When he does, he can change any number of weather conditions to any of the stages given."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Call Lightning (requires Mountain Fane).",
+							"entries": [
+								"Strahd casts or uses {@spell call lightning} without components or concentration. Whenever he rolls lightning damage with this spell while outdoors in a storm, he deals maximum damage, instead of rolling."
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"monster": [
+		{
+			"name": "Strahd, the Mage",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CurseofStrahdCollection",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "39d8 + 156",
+				"average": 331
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 20,
+			"dex": 20,
+			"con": 18,
+			"int": 20,
+			"wis": 15,
+			"cha": 20,
+			"save": {
+				"dex": "+12",
+				"wis": "+9",
+				"cha": "+12"
+			},
+			"skill": {
+				"religion": "+12",
+				"stealth": "+19",
+				"arcana": "+19",
+				"athletics": "+12",
+				"deception": "+19",
+				"perception": "+16"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 26,
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Draconic",
+				"Elvish",
+				"Giant",
+				"Infernal"
+			],
+			"cr": "21",
+			"spellcasting": [
+				{
+					"name": "Complex Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Strahd is a 20th-level spellcaster. If Strahd casts a spell on his turn using a bonus action, he can also use his action to cast a noncantrip spell on the same turn.",
+						"His spellcasting ability is Intelligence (spell save {@dc 20}, {@hit 12} to hit with spell attacks). He has the following wizard spells prepared:"
+					],
+					"ability": "int"
+				},
+				{
+					"name": "Innate Spellcasting",
+					"type": "spellcasting",
+					"daily": {
+						"1": [
+							"{@spell scrying}"
+						],
+						"3": [
+							"{@spell dispel magic}"
+						],
+						"3e": [
+							"{@spell animate dead}",
+							"{@spell detect thoughts}"
+						]
+					}
+				}
+			],
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"If Strahd isn't in running water or sunlight, he can use his action to polymorph into a Tiny bat, a Medium wolf, or a Medium cloud of mist, or back into his true form.",
+						"While in bat or wolf form, Strahd can't speak. In bat form, his walking speed is 5 feet, and he has a flying speed of 30 feet. In wolf form, his walking speed is 40 feet. His statistics, other than his size and speed, are unchanged. Anything he is wearing transforms with him, but nothing he is carrying does. He reverts to his true form if he dies.",
+						"While in mist form, Strahd can't take any actions, speak, or manipulate objects. He is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and he can't pass through water. He has advantage on Strength, Dexterity, and Constitution saving throws, and he is immune to all nonmagical damage, except the damage he takes from sunlight."
+					]
+				},
+				{
+					"name": "Legendary Resistance (2/Day)",
+					"entries": [
+						"If Strahd fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Misty Escape",
+					"entries": [
+						"When Strahd drops to 0 hit points outside his coffin, he transforms into a cloud of mist (as in the Shapechanger trait) instead of falling {@condition unconscious}, provided that he isn't in running water or sunlight. If he can't transform, he is destroyed.",
+						"While he has 0 hit points in mist form, he can't revert to his vampire form, and he must reach his coffin within 2 hours or be destroyed. Once in his coffin, he reverts to his vampire form. He is then {@condition paralyzed} until he regains at least 1 hit point. After 1 hour in his coffin with 0 hit points, he regains 1 hit point."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Strahd regains 20 hit points at the start of his turn if he has at least 1 hit point and isn’t in sunlight. If he takes radiant damage, this trait doesn’t function at the start of his next turn."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"Strahd can move up, down, and across vertical surfaces and upside down along ceilings, while leaving his hands free."
+					]
+				},
+				{
+					"name": "Vampire Weaknesses",
+					"entries": [
+						"Strahd has the following flaws:",
+						"{@i Forbiddance.} He can't enter a residence without an invitation from one of the occupants.",
+						"{@i Harmed by Running Water.} He takes 20 acid damage if he ends his turn in running water.",
+						"{@i Stake to the Heart.} If a piercing weapon made of wood is driven into his heart while he is {@condition incapacitated} in his coffin, he is {@condition paralyzed} until the stake is removed.",
+						"{@i Sunlight Hypersensitivity.} While in sunlight, Strahd takes 20 radiant damage at the start of his turn, and he has disadvantage on attack rolls and ability checks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Strahd uses {@i vampiric touch} twice, or {@i vampiric touch} and {@i telekinetic grasp} once each."
+					]
+				},
+				{
+					"name": "Vampiric Touch",
+					"entries": [
+						"Strahd casts or attacks with {@spell vampiric touch} ({@hit +12} to hit).",
+						"A creature hit by an attack made with this spell must make a {@dc 20} Constitution saving throw or be {@condition dazed} until the start of Strahd’s next turn. (That creature can move or take one action on its turn, not both. It also can’t take a bonus action or a reaction.)"
+					]
+				},
+				{
+					"name": "Telekinetic Grasp",
+					"entries": [
+						"{@i 2nd-level transmutation}, range 60 feet, components V S M, 1 round.",
+						"Effect: Strahd exerts his will on one creature that he can see within 60 feet and forces it to make a {@dc 20} Strength saving throw. On a failure, that creature rises vertically, up to 20 feet, and remains suspended there until the start of Strahd’s next turn. That creature also takes {@h}7 ({@damage 2d6}) necrotic damage and is {@condition restrained} until the end of Strahd’s next turn. When the effect ends, the target falls to the ground if it is still aloft."
+					]
+				},
+				{
+					"name": "Dispel Magic (3/day)",
+					"entries": [
+						"Strahd casts {@spell dispel magic}. "
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Circle of Sickness",
+					"entries": [
+						"{@i 3rd-level necromancy}, self, components V S M, instantaneous.",
+						"Effect: A sphere of negative energy bursts from Strahd. Each creature within 10 feet of Strahd must make a {@dc 20} Constitution saving throw. On a failure, a creature takes {@h}28 ({@damage 8d6}) necrotic damage and gains disadvantage on its next attack roll made before the end of its next turn. A creature that succeeds on the roll takes half damage and doesn’t gain disadvantage."
+					]
+				},
+				{
+					"name": "Lightning Bolt",
+					"entries": [
+						"Strahd casts {@spell lightning bolt}. "
+					]
+				}
+			],
+			"reactionHeader": [
+				"Strahd can take up to three reactions per round, but only one per turn. If he would lose his reactions and isn't incapacitated, he loses one reaction instead."
+			],
+			"reaction": [
+				{
+					"name": "Misty Step",
+					"entries": [
+						"In response to taking damage, Strahd casts  {@spell misty step}"
+					]
+				},
+				{
+					"name": "Blindness/Deafness",
+					"entries": [
+						"In response to taking damage from a melee attack, Strahd casts {@spell blindness/deafness} ({@dc 20}) against the attacker. A creature that fails its saving throw against the spell takes an additional {@h}7 ({damage {@dice 2d6}}) necrotic damage."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Strahd, the Mage",
+				"source": "CurseofStrahdCollection"
+			},
+			"token": {
+				"name": "Strahd von Zarovich",
+				"source": "CoS"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Regeneration",
+				"Shapechanger",
+				"Spider Climb",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"DR",
+				"E",
+				"GI",
+				"I"
+			],
+			"damageTags": [
+				"N"
+			],
+			"damageTagsLegendary": [
+				"B",
+				"F"
+			],
+			"spellcastingTags": [
+				"CW",
+				"I"
+			],
+			"miscTags": [
+				"AOE"
+			],
+			"conditionInflict": [
+				"dazed"
+			],
+			"conditionInflictSpell": [
+				"invisible",
+				"unconscious"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"strength"
+			],
+			"savingThrowForcedLegendary": [
+				"dexterity",
+				"strength",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"name": "Strahd von Zarovich",
+				"source": "CoS",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"With his mind sharp and his heart dark, Strahd von Zarovich is a formidable foe. Courage and lives beyond measure have been lost to him. Reread chapter 1, \"Into the Mists,\" to understand his personality and goals.",
+											"Although Strahd can be encountered almost anywhere in his domain, the vampire is always encountered in the place indicated by the card reading in chapter 1, unless he has been forced into his tomb in the catacombs of Castle Ravenloft."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Strahd's Tactics",
+										"entries": [
+											"Because the entire adventure revolves around Strahd, you must play him intelligently and do everything you can to make him a terrifying and cunning adversary for the player characters.",
+											"When you run an encounter with Strahd, keep the following facts in mind:",
+											{
+												"type": "list",
+												"items": [
+													"Strahd attacks at the most advantageous moment and from the most advantageous position.",
+													"Strahd knows when he's in over his head. If he begins taking more damage than he can regenerate, he moves beyond the reach of melee combatants and spellcasters, or he flies away (using summoned wolves or swarms of bats or rats to guard his retreat).",
+													"Strahd observes the characters to see who among them are most easily swayed, then tries to charm characters who have low Wisdom scores and use them as thralls. At the very least, he can order a {@condition charmed} character to guard him against other members of the adventuring party."
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "The Vampire's Minions",
+										"entries": [
+											"Whenever Strahd appears in a location other than his tomb or the place indicated by the card reading, roll a {@dice d20} and consult the Strahd's Minions table to determine what creatures he brings with him, if any."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Strahd's Minions",
+										"entries": [
+											{
+												"type": "table",
+												"colLabels": [
+													"d20",
+													"Creatures"
+												],
+												"colStyles": [
+													"col-6",
+													"col-6"
+												],
+												"rows": [
+													[
+														"1–3",
+														"{@dice 1d4 + 2} {@creature dire wolf||dire wolves}"
+													],
+													[
+														"4–6",
+														"{@dice 1d6 + 3} {@creature ghoul||ghouls}"
+													],
+													[
+														"7–9",
+														"{@dice 1d4 + 2} {@creature Strahd zombie|CoS|Strahd zombies} (in this appendix)"
+													],
+													[
+														"10–12",
+														"{@dice 2d4} {@creature swarm of bats||swarms of bats}"
+													],
+													[
+														"13–15",
+														"{@dice 1d4 + 1} {@creature vampire spawn}"
+													],
+													[
+														"16–18",
+														"{@dice 3d6} {@creature wolf||wolves}"
+													],
+													[
+														"19–20",
+														"None"
+													]
+												]
+											},
+											"If the characters are in a residence, Strahd's creatures break through doors and windows to reach them, or crawl up through the earth, or swoop down the chimney. The vampire spawn (all that's left of a party of adventurers that Strahd defeated long ago) can't enter the characters' location unless invited."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Heart of Sorrow",
+										"entries": [
+											"Strahd can afford to be bold in his tactics, for he has additional protection in the form of a giant crystal heart hidden inside Castle Ravenloft.",
+											"Any damage that Strahd takes is transferred to the Heart of Sorrow (see chapter 4, area K20). If the heart absorbs damage that reduces it to 0 hit points, it is destroyed, and Strahd takes any leftover damage. The Heart of Sorrow has 50 hit points and is restored to that number of hit points each dawn, provided it has at least 1 hit point remaining. Strahd can, as a bonus action on his turn, break his link to the Heart of Sorrow so that it no longer absorbs damage dealt to him. Strahd can reestablish his link to the Heart of Sorrow as a bonus action on his turn, but only while in Castle Ravenloft.",
+											"The effect of the protection afforded by the Heart of Sorrow can be chilling to behold, as damage to Strahd is quickly undone. For example, a critical hit might dislocate Strahd's jaw, but only for a moment; then the vampire's jaw quickly resets itself.",
+											"The ability of the Heart of Sorrow to absorb damage is suppressed if it or Strahd is fully within an {@spell antimagic field}."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Lair Actions",
+								"entries": [
+									"While Strahd is in Castle Ravenloft, he can take lair actions as long as he isn't {@condition incapacitated}.",
+									"On initiative count 20 (losing initiative ties), Strahd can take one of the following lair action options, or forgo using any of them in that round:",
+									{
+										"type": "list",
+										"items": [
+											"Until initiative count 20 of the next round, Strahd can pass through solid walls, doors, ceilings, and floors as if they weren't there.",
+											"Strahd targets any number of doors and windows that he can see, causing each one to either open or close as he wishes. Closed doors can be magically locked (needing a successful {@dc 20} Strength check to force open) until Strahd chooses to end the effect, or until Strahd uses this lair action again.",
+											"Strahd summons the angry spirit of one who has died in the castle. The apparition appears next to a hostile creature that Strahd can see, makes an attack against that creature, and then disappears. The apparition has the statistics of a {@creature specter}.",
+											"Strahd targets one Medium or smaller creature that casts a shadow. The target's shadow must be visible to Strahd and within 30 feet of him. If the target fails a {@dc 17} Charisma saving throw, its shadow detaches from it and becomes a {@creature shadow} that obeys Strahd's commands, acting on initiative count 20. A {@spell greater restoration} spell or a {@spell remove curse} spell cast on the target restores its natural shadow, but only if its undead shadow has been destroyed."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/CoS/153-636988936829621698.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Strahd, the Soldier",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CurseofStrahdCollection",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "39d8 + 156",
+				"average": 331
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 20,
+			"dex": 20,
+			"con": 18,
+			"int": 20,
+			"wis": 15,
+			"cha": 20,
+			"save": {
+				"dex": "+12",
+				"wis": "+9",
+				"cha": "+12"
+			},
+			"skill": {
+				"religion": "+12",
+				"stealth": "+19",
+				"arcana": "+19",
+				"athletics": "+12",
+				"deception": "+19",
+				"perception": "+16"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 26,
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Draconic",
+				"Elvish",
+				"Giant",
+				"Infernal"
+			],
+			"cr": "21",
+			"trait": [
+				{
+					"name": "Battlefield Awareness",
+					"entries": [
+						"Strahd has advantage on Strength and Dexterity saving throws against effects that he can see or hear, such as traps and spells. Additionally, Strahd can't be disarmed."
+					]
+				},
+				{
+					"name": "Legendary Resistance (2/Day)",
+					"entries": [
+						"If Strahd fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Misty Escape",
+					"entries": [
+						"When Strahd drops to 0 hit points outside his coffin, he transforms into a cloud of mist (as in the Shapechanger trait) instead of falling {@condition unconscious}, provided that he isn't in running water or sunlight. If he can't transform, he is destroyed.",
+						"While he has 0 hit points in mist form, he can't revert to his vampire form, and he must reach his coffin within 2 hours or be destroyed. Once in his coffin, he reverts to his vampire form. He is then {@condition paralyzed} until he regains at least 1 hit point. After 1 hour in his coffin with 0 hit points, he regains 1 hit point."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Strahd regains 20 hit points at the start of his turn if he has at least 1 hit point and isn’t in sunlight. If he takes radiant damage, this trait doesn’t function at the start of his next turn."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"Strahd can move up, down, and across vertical surfaces and upside down along ceilings, while leaving his hands free."
+					]
+				},
+				{
+					"name": "Vampire Weaknesses",
+					"entries": [
+						"Strahd has the following flaws:",
+						"{@i Forbiddance.} He can't enter a residence without an invitation from one of the occupants.",
+						"{@i Harmed by Running Water.} He takes 20 acid damage if he ends his turn in running water.",
+						"{@i Stake to the Heart.} If a piercing weapon made of wood is driven into his heart while he is {@condition incapacitated} in his coffin, he is {@condition paralyzed} until the stake is removed.",
+						"{@i Sunlight Hypersensitivity.} While in sunlight, Strahd takes 20 radiant damage at the start of his turn, and he has disadvantage on attack rolls and ability checks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Strahd makes two attacks, only one of which can be an {@b umbral net}."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit +12} to hit, reach 5 ft., one target. {@h} 11 ({@damage 1d10 + 5}) slashing damage plus 7 ({@damage 2d6}) necrotic damage. If the target is a creature, Strahd can force it to succeed on a {@dc 20} Strength saving throw or be pushed 5 feet away and knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Umbral Net",
+					"entries": [
+						"{@atk rs} {@hit +12} to hit, range 30/60 ft., one creature. {@h} 7 (@damage {@dice 2d6}}) necrotic damage and the target is {@condition restrained} until the start of Strahd’s next turn."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Thunderous Wave",
+					"entries": [
+						"Strahd slams the point of his sword into the ground, creating a shockwave. Each creature within 5 feet must make a {@dc 20} Strength saving throw or take 14 ({@damage 3d8}) thunder damage and be pushed 5 feet away. A creature that succeeds on the roll takes half damage and isn’t pushed."
+					]
+				},
+				{
+					"name": "Dark Volley",
+					"entries": [
+						"Strahd conjures a rain of shadowy arrows to fall toward a point he can see within 120 feet. Each creature within a 10-foot radius, 40-foot-high cylinder centered on that point must make a {@dc 20} Dexterity saving throw, taking 18 ({@damage 4d8}) necrotic damage on a failure or half as much damage on a success."
+					]
+				}
+			],
+			"reactionHeader": [
+				"Strahd can take up to three reactions per round, but only one per turn. If he would lose his reactions and isn't incapacitated, he loses one reaction instead."
+			],
+			"reaction": [
+				{
+					"name": "Commander’s Retreat",
+					"entries": [
+						"In response to taking damage from a melee attack, Strahd forces his attacker to succeed on a {@dc 20} Strength saving throw or be pushed 5 feet away. He can then immediately move up to his speed away from them without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Vengeful Strike",
+					"entries": [
+						"In response to taking damage from a spell or attack, Strahd moves up to his speed toward the attacker and can make a {@b longsword} attack against them. This movement doesn’t trigger opportunity attacks."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Strahd, the Soldier",
+				"source": "CurseofStrahdCollection"
+			},
+			"token": {
+				"name": "Strahd von Zarovich",
+				"source": "CoS"
+			},
+			"attachedItems": [
+				"longsword|phb"
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Regeneration",
+				"Shapechanger",
+				"Spider Climb",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"DR",
+				"E",
+				"GI",
+				"I"
+			],
+			"damageTags": [
+				"N",
+				"S",
+				"T"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW",
+				"RA",
+				"THW"
+			],
+			"conditionInflict": [
+				"prone",
+				"restrained"
+			],
+			"conditionInflictSpell": [
+				"invisible",
+				"unconscious"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			],
+			"savingThrowForcedLegendary": [
+				"charisma"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"name": "Strahd von Zarovich",
+				"source": "CoS",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"With his mind sharp and his heart dark, Strahd von Zarovich is a formidable foe. Courage and lives beyond measure have been lost to him. Reread chapter 1, \"Into the Mists,\" to understand his personality and goals.",
+											"Although Strahd can be encountered almost anywhere in his domain, the vampire is always encountered in the place indicated by the card reading in chapter 1, unless he has been forced into his tomb in the catacombs of Castle Ravenloft."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Strahd's Tactics",
+										"entries": [
+											"Because the entire adventure revolves around Strahd, you must play him intelligently and do everything you can to make him a terrifying and cunning adversary for the player characters.",
+											"When you run an encounter with Strahd, keep the following facts in mind:",
+											{
+												"type": "list",
+												"items": [
+													"Strahd attacks at the most advantageous moment and from the most advantageous position.",
+													"Strahd knows when he's in over his head. If he begins taking more damage than he can regenerate, he moves beyond the reach of melee combatants and spellcasters, or he flies away (using summoned wolves or swarms of bats or rats to guard his retreat).",
+													"Strahd observes the characters to see who among them are most easily swayed, then tries to charm characters who have low Wisdom scores and use them as thralls. At the very least, he can order a {@condition charmed} character to guard him against other members of the adventuring party."
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "The Vampire's Minions",
+										"entries": [
+											"Whenever Strahd appears in a location other than his tomb or the place indicated by the card reading, roll a {@dice d20} and consult the Strahd's Minions table to determine what creatures he brings with him, if any."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Strahd's Minions",
+										"entries": [
+											{
+												"type": "table",
+												"colLabels": [
+													"d20",
+													"Creatures"
+												],
+												"colStyles": [
+													"col-6",
+													"col-6"
+												],
+												"rows": [
+													[
+														"1–3",
+														"{@dice 1d4 + 2} {@creature dire wolf||dire wolves}"
+													],
+													[
+														"4–6",
+														"{@dice 1d6 + 3} {@creature ghoul||ghouls}"
+													],
+													[
+														"7–9",
+														"{@dice 1d4 + 2} {@creature Strahd zombie|CoS|Strahd zombies} (in this appendix)"
+													],
+													[
+														"10–12",
+														"{@dice 2d4} {@creature swarm of bats||swarms of bats}"
+													],
+													[
+														"13–15",
+														"{@dice 1d4 + 1} {@creature vampire spawn}"
+													],
+													[
+														"16–18",
+														"{@dice 3d6} {@creature wolf||wolves}"
+													],
+													[
+														"19–20",
+														"None"
+													]
+												]
+											},
+											"If the characters are in a residence, Strahd's creatures break through doors and windows to reach them, or crawl up through the earth, or swoop down the chimney. The vampire spawn (all that's left of a party of adventurers that Strahd defeated long ago) can't enter the characters' location unless invited."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Heart of Sorrow",
+										"entries": [
+											"Strahd can afford to be bold in his tactics, for he has additional protection in the form of a giant crystal heart hidden inside Castle Ravenloft.",
+											"Any damage that Strahd takes is transferred to the Heart of Sorrow (see chapter 4, area K20). If the heart absorbs damage that reduces it to 0 hit points, it is destroyed, and Strahd takes any leftover damage. The Heart of Sorrow has 50 hit points and is restored to that number of hit points each dawn, provided it has at least 1 hit point remaining. Strahd can, as a bonus action on his turn, break his link to the Heart of Sorrow so that it no longer absorbs damage dealt to him. Strahd can reestablish his link to the Heart of Sorrow as a bonus action on his turn, but only while in Castle Ravenloft.",
+											"The effect of the protection afforded by the Heart of Sorrow can be chilling to behold, as damage to Strahd is quickly undone. For example, a critical hit might dislocate Strahd's jaw, but only for a moment; then the vampire's jaw quickly resets itself.",
+											"The ability of the Heart of Sorrow to absorb damage is suppressed if it or Strahd is fully within an {@spell antimagic field}."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Lair Actions",
+								"entries": [
+									"While Strahd is in Castle Ravenloft, he can take lair actions as long as he isn't {@condition incapacitated}.",
+									"On initiative count 20 (losing initiative ties), Strahd can take one of the following lair action options, or forgo using any of them in that round:",
+									{
+										"type": "list",
+										"items": [
+											"Until initiative count 20 of the next round, Strahd can pass through solid walls, doors, ceilings, and floors as if they weren't there.",
+											"Strahd targets any number of doors and windows that he can see, causing each one to either open or close as he wishes. Closed doors can be magically locked (needing a successful {@dc 20} Strength check to force open) until Strahd chooses to end the effect, or until Strahd uses this lair action again.",
+											"Strahd summons the angry spirit of one who has died in the castle. The apparition appears next to a hostile creature that Strahd can see, makes an attack against that creature, and then disappears. The apparition has the statistics of a {@creature specter}.",
+											"Strahd targets one Medium or smaller creature that casts a shadow. The target's shadow must be visible to Strahd and within 30 feet of him. If the target fails a {@dc 17} Charisma saving throw, its shadow detaches from it and becomes a {@creature shadow} that obeys Strahd's commands, acting on initiative count 20. A {@spell greater restoration} spell or a {@spell remove curse} spell cast on the target restores its natural shadow, but only if its undead shadow has been destroyed."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/CoS/153-636988936829621698.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Strahd, the Vampire",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CurseofStrahdCollection",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "39d8 + 156",
+				"average": 331
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 20,
+			"dex": 20,
+			"con": 18,
+			"int": 20,
+			"wis": 15,
+			"cha": 20,
+			"save": {
+				"dex": "+12",
+				"wis": "+9",
+				"cha": "+12"
+			},
+			"skill": {
+				"religion": "+12",
+				"stealth": "+19",
+				"arcana": "+19",
+				"athletics": "+12",
+				"deception": "+19",
+				"perception": "+16"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 26,
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Draconic",
+				"Elvish",
+				"Giant",
+				"Infernal"
+			],
+			"cr": "21",
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"If Strahd isn't in running water or sunlight, he can use his action to polymorph into a Tiny bat, a Medium wolf, or a Medium cloud of mist, or back into his true form.",
+						"While in bat or wolf form, Strahd can't speak. In bat form, his walking speed is 5 feet, and he has a flying speed of 30 feet. In wolf form, his walking speed is 40 feet. His statistics, other than his size and speed, are unchanged. Anything he is wearing transforms with him, but nothing he is carrying does. He reverts to his true form if he dies.",
+						"While in mist form, Strahd can't take any actions, speak, or manipulate objects. He is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and he can't pass through water. He has advantage on Strength, Dexterity, and Constitution saving throws, and he is immune to all nonmagical damage, except the damage he takes from sunlight."
+					]
+				},
+				{
+					"name": "Legendary Resistance (2/Day)",
+					"entries": [
+						"If Strahd fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Misty Escape",
+					"entries": [
+						"When Strahd drops to 0 hit points outside his coffin, he transforms into a cloud of mist (as in the Shapechanger trait) instead of falling {@condition unconscious}, provided that he isn't in running water or sunlight. If he can't transform, he is destroyed.",
+						"While he has 0 hit points in mist form, he can't revert to his vampire form, and he must reach his coffin within 2 hours or be destroyed. Once in his coffin, he reverts to his vampire form. He is then {@condition paralyzed} until he regains at least 1 hit point. After 1 hour in his coffin with 0 hit points, he regains 1 hit point."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Strahd regains 20 hit points at the start of his turn if he has at least 1 hit point and isn’t in sunlight. If he takes radiant damage, this trait doesn’t function at the start of his next turn."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"Strahd can move up, down, and across vertical surfaces and upside down along ceilings, while leaving his hands free."
+					]
+				},
+				{
+					"name": "Vampire Weaknesses",
+					"entries": [
+						"Strahd has the following flaws:",
+						"{@i Forbiddance.} He can't enter a residence without an invitation from one of the occupants.",
+						"{@i Harmed by Running Water.} He takes 20 acid damage if he ends his turn in running water.",
+						"{@i Stake to the Heart.} If a piercing weapon made of wood is driven into his heart while he is {@condition incapacitated} in his coffin, he is {@condition paralyzed} until the stake is removed.",
+						"{@i Sunlight Hypersensitivity.} While in sunlight, Strahd takes 20 radiant damage at the start of his turn, and he has disadvantage on attack rolls and ability checks."
+					]
+				},
+				{
+					"name": "Father of the Night",
+					"entries": [
+						"A humanoid killed by Strahd’s {@b bite}, or which is reduced to 0 hit points by it and dies without regaining consciousness, arises as a {@creature vampire spawn} under Strahd’s control at the start of his next turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Strahd makes two attacks, only one of which can be a bite attack. Strahd can replace one of his attacks with a {@b charm}."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit +12} to hit, each 5 ft., one target. {@h} 10 {@damage 1d8 + 5} slashing damage plus {@h} 14 {@damage 4d6} necrotic damage. If the target is a creature, Strahd can grapple it (escape {@dc 20})."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit +12} to hit, reach 5 ft., one willing creature, or a creature that is {@condition grappled} by Strahd, {@condition incapacitated}, or {@condition restrained}. {@h} 10 {@damage 1d8 + 5} piercing damage plus 10 ({@damage 3d6}) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and Strahd regains hit points equal to that amount. Each time the target finishes a long rest without being bitten again, it can roll one of its hit dice and add its Constitution modifier. The target’s maximum hit points increase by an amount equal to the result. (This increase can’t raise the target’s hit points above its original maximum.)"
+					]
+				},
+				{
+					"name": "Charm",
+					"entries": [
+						"One humanoid within 30 feet that Strahd can see must make a {@dc 20} Wisdom saving throw or be magically {@condition charmed} for 1 minute or until Strahd loses his {@status concentration} (as if {@status concentration||concentrating} on a spell).",
+						"A target that can't see Strahd automatically succeeds. While {@condition charmed}, the target regards Strahd as a trusted friend to be heeded and protected; it isn't under Strahd's control, but takes his requests and actions in the most favorable way and lets Strahd bite it.",
+						"The target can repeat the saving throw at the end of each of its turns, ending the effect on a success. If the target is still {@condition charmed} at the end of the minute, the effect lasts for 24 hours, until Strahd is destroyed, or until he takes a bonus action to end it."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Bats’ Frenzy",
+					"entries": [
+						"Strahd summons a swarm of bat-like shadows from his cloak, forcing each creature within 10 feet to make a successful {@dc 20} Dexterity saving throw or take {@h}15 ({@damage 6d4}) necrotic damage and gain disadvantage on the next attack roll it makes before the start of Strahd’s next turn. A creature that succeeds on the roll takes half damage and doesn’t gain disadvantage."
+					]
+				},
+				{
+					"name": "Predator’s Fury",
+					"entries": [
+						"Strahd summons a pair of wolf-like shadows from his cloak and chooses up to two creatures he can see within 60 feet that are within 5 feet of each other. A target must succeed on a {@dc 20} Dexterity saving throw or take {@h}16 ({@damage 2d10 +5}) force damage and be knocked {@condition prone}. A creature that succeeds on the roll takes half damage and isn’t knocked {@condition prone}."
+					]
+				}
+			],
+			"reactionHeader": [
+				"Strahd can take up to three reactions per round, but only one per turn. If he would lose his reactions and isn't incapacitated, he loses one reaction instead."
+			],
+			"reaction": [
+				{
+					"name": "Night’s Retreat",
+					"entries": [
+						"In response to taking damage, Strahd can fly up to his speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Blood Frenzy",
+					"entries": [
+						"In response to taking damage, Strahd can move up to his speed toward the attacker and make an {@b unarmed strike} attack against it."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Strahd, the Vampire",
+				"source": "CurseofStrahdCollection"
+			},
+			"token": {
+				"name": "Strahd von Zarovich",
+				"source": "CoS"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Regeneration",
+				"Shapechanger",
+				"Spider Climb",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"DR",
+				"E",
+				"GI",
+				"I"
+			],
+			"damageTags": [
+				"N",
+				"O"
+			],
+			"damageTagsLegendary": [
+				"B",
+				"F"
+			],
+			"miscTags": [
+				"AOE",
+				"HPR",
+				"MW"
+			],
+			"conditionInflict": [
+				"charmed",
+				"prone"
+			],
+			"conditionInflictSpell": [
+				"invisible",
+				"unconscious"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"wisdom"
+			],
+			"savingThrowForcedLegendary": [
+				"dexterity",
+				"strength",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"name": "Strahd von Zarovich",
+				"source": "CoS",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"With his mind sharp and his heart dark, Strahd von Zarovich is a formidable foe. Courage and lives beyond measure have been lost to him. Reread chapter 1, \"Into the Mists,\" to understand his personality and goals.",
+											"Although Strahd can be encountered almost anywhere in his domain, the vampire is always encountered in the place indicated by the card reading in chapter 1, unless he has been forced into his tomb in the catacombs of Castle Ravenloft."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Strahd's Tactics",
+										"entries": [
+											"Because the entire adventure revolves around Strahd, you must play him intelligently and do everything you can to make him a terrifying and cunning adversary for the player characters.",
+											"When you run an encounter with Strahd, keep the following facts in mind:",
+											{
+												"type": "list",
+												"items": [
+													"Strahd attacks at the most advantageous moment and from the most advantageous position.",
+													"Strahd knows when he's in over his head. If he begins taking more damage than he can regenerate, he moves beyond the reach of melee combatants and spellcasters, or he flies away (using summoned wolves or swarms of bats or rats to guard his retreat).",
+													"Strahd observes the characters to see who among them are most easily swayed, then tries to charm characters who have low Wisdom scores and use them as thralls. At the very least, he can order a {@condition charmed} character to guard him against other members of the adventuring party."
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "The Vampire's Minions",
+										"entries": [
+											"Whenever Strahd appears in a location other than his tomb or the place indicated by the card reading, roll a {@dice d20} and consult the Strahd's Minions table to determine what creatures he brings with him, if any."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Strahd's Minions",
+										"entries": [
+											{
+												"type": "table",
+												"colLabels": [
+													"d20",
+													"Creatures"
+												],
+												"colStyles": [
+													"col-6",
+													"col-6"
+												],
+												"rows": [
+													[
+														"1–3",
+														"{@dice 1d4 + 2} {@creature dire wolf||dire wolves}"
+													],
+													[
+														"4–6",
+														"{@dice 1d6 + 3} {@creature ghoul||ghouls}"
+													],
+													[
+														"7–9",
+														"{@dice 1d4 + 2} {@creature Strahd zombie|CoS|Strahd zombies} (in this appendix)"
+													],
+													[
+														"10–12",
+														"{@dice 2d4} {@creature swarm of bats||swarms of bats}"
+													],
+													[
+														"13–15",
+														"{@dice 1d4 + 1} {@creature vampire spawn}"
+													],
+													[
+														"16–18",
+														"{@dice 3d6} {@creature wolf||wolves}"
+													],
+													[
+														"19–20",
+														"None"
+													]
+												]
+											},
+											"If the characters are in a residence, Strahd's creatures break through doors and windows to reach them, or crawl up through the earth, or swoop down the chimney. The vampire spawn (all that's left of a party of adventurers that Strahd defeated long ago) can't enter the characters' location unless invited."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Heart of Sorrow",
+										"entries": [
+											"Strahd can afford to be bold in his tactics, for he has additional protection in the form of a giant crystal heart hidden inside Castle Ravenloft.",
+											"Any damage that Strahd takes is transferred to the Heart of Sorrow (see chapter 4, area K20). If the heart absorbs damage that reduces it to 0 hit points, it is destroyed, and Strahd takes any leftover damage. The Heart of Sorrow has 50 hit points and is restored to that number of hit points each dawn, provided it has at least 1 hit point remaining. Strahd can, as a bonus action on his turn, break his link to the Heart of Sorrow so that it no longer absorbs damage dealt to him. Strahd can reestablish his link to the Heart of Sorrow as a bonus action on his turn, but only while in Castle Ravenloft.",
+											"The effect of the protection afforded by the Heart of Sorrow can be chilling to behold, as damage to Strahd is quickly undone. For example, a critical hit might dislocate Strahd's jaw, but only for a moment; then the vampire's jaw quickly resets itself.",
+											"The ability of the Heart of Sorrow to absorb damage is suppressed if it or Strahd is fully within an {@spell antimagic field}."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Lair Actions",
+								"entries": [
+									"While Strahd is in Castle Ravenloft, he can take lair actions as long as he isn't {@condition incapacitated}.",
+									"On initiative count 20 (losing initiative ties), Strahd can take one of the following lair action options, or forgo using any of them in that round:",
+									{
+										"type": "list",
+										"items": [
+											"Until initiative count 20 of the next round, Strahd can pass through solid walls, doors, ceilings, and floors as if they weren't there.",
+											"Strahd targets any number of doors and windows that he can see, causing each one to either open or close as he wishes. Closed doors can be magically locked (needing a successful {@dc 20} Strength check to force open) until Strahd chooses to end the effect, or until Strahd uses this lair action again.",
+											"Strahd summons the angry spirit of one who has died in the castle. The apparition appears next to a hostile creature that Strahd can see, makes an attack against that creature, and then disappears. The apparition has the statistics of a {@creature specter}.",
+											"Strahd targets one Medium or smaller creature that casts a shadow. The target's shadow must be visible to Strahd and within 30 feet of him. If the target fails a {@dc 17} Charisma saving throw, its shadow detaches from it and becomes a {@creature shadow} that obeys Strahd's commands, acting on initiative count 20. A {@spell greater restoration} spell or a {@spell remove curse} spell cast on the target restores its natural shadow, but only if its undead shadow has been destroyed."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/CoS/153-636988936829621698.webp"
+						}
+					}
+				]
+			}
+		}
+	]
+}
