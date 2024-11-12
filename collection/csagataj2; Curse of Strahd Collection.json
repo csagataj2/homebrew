@@ -1,5 +1,4 @@
 {
-	"siteVersion": "1.210.13",
 	"_meta": {
 		"sources": [
 			{
@@ -17,9 +16,9 @@
 			}
 		],
 		"dateAdded": 1731234550,
-		"dateLastModified": 1731234550,
-		"edition": "classic"
+		"dateLastModified": 1731234550
 	},
+	"siteVersion": "1.210.13",
 	"legendaryGroup": [
 		{
 			"name": "Strahd, the Mage",
@@ -257,16 +256,15 @@
 			"spellcasting": [
 				{
 					"name": "Complex Spellcasting",
-					"type": "spellcasting",
 					"headerEntries": [
 						"Strahd is a 20th-level spellcaster. If Strahd casts a spell on his turn using a bonus action, he can also use his action to cast a noncantrip spell on the same turn.",
 						"His spellcasting ability is Intelligence (spell save {@dc 20}, {@hit 12} to hit with spell attacks). He has the following wizard spells prepared:"
 					],
-					"ability": "int"
+					"ability": "int",
+					"type": "spellcasting"
 				},
 				{
 					"name": "Innate Spellcasting",
-					"type": "spellcasting",
 					"daily": {
 						"1": [
 							"{@spell scrying}"
@@ -278,7 +276,11 @@
 							"{@spell animate dead}",
 							"{@spell detect thoughts}"
 						]
-					}
+					},
+					"will": [
+						"{@spell lightning bolt}"
+					],
+					"type": "spellcasting"
 				}
 			],
 			"trait": [
@@ -415,13 +417,6 @@
 				"GI",
 				"I"
 			],
-			"damageTags": [
-				"N"
-			],
-			"damageTagsLegendary": [
-				"B",
-				"F"
-			],
 			"spellcastingTags": [
 				"CW",
 				"I"
@@ -436,23 +431,9 @@
 				"invisible",
 				"unconscious"
 			],
-			"savingThrowForced": [
-				"constitution",
-				"strength"
-			],
-			"savingThrowForcedLegendary": [
-				"dexterity",
-				"strength",
-				"wisdom"
-			],
-			"savingThrowForcedSpell": [
-				"wisdom"
-			],
 			"hasFluff": true,
 			"hasFluffImages": true,
 			"fluff": {
-				"name": "Strahd von Zarovich",
-				"source": "CoS",
 				"entries": [
 					{
 						"type": "entries",
@@ -553,23 +534,43 @@
 						]
 					},
 					{
-						"type": "entries",
-						"entries": [
+						"type": "list",
+						"style": "list-hang-notitle",
+						"items": [
 							{
-								"type": "entries",
-								"name": "Lair Actions",
+								"type": "item",
+								"name": "Scatter",
 								"entries": [
-									"While Strahd is in Castle Ravenloft, he can take lair actions as long as he isn't {@condition incapacitated}.",
-									"On initiative count 20 (losing initiative ties), Strahd can take one of the following lair action options, or forgo using any of them in that round:",
-									{
-										"type": "list",
-										"items": [
-											"Until initiative count 20 of the next round, Strahd can pass through solid walls, doors, ceilings, and floors as if they weren't there.",
-											"Strahd targets any number of doors and windows that he can see, causing each one to either open or close as he wishes. Closed doors can be magically locked (needing a successful {@dc 20} Strength check to force open) until Strahd chooses to end the effect, or until Strahd uses this lair action again.",
-											"Strahd summons the angry spirit of one who has died in the castle. The apparition appears next to a hostile creature that Strahd can see, makes an attack against that creature, and then disappears. The apparition has the statistics of a {@creature specter}.",
-											"Strahd targets one Medium or smaller creature that casts a shadow. The target's shadow must be visible to Strahd and within 30 feet of him. If the target fails a {@dc 17} Charisma saving throw, its shadow detaches from it and becomes a {@creature shadow} that obeys Strahd's commands, acting on initiative count 20. A {@spell greater restoration} spell or a {@spell remove curse} spell cast on the target restores its natural shadow, but only if its undead shadow has been destroyed."
-										]
-									}
+									"The air quivers around up to three creatures of Strahd's choice that he can see within 60 feet. Each creature must succeed on a {@dc 20} Wisdom saving throw or be teleported to an unoccupied space on the ground or floor that Strahd can see within 60 feet of him."
+								]
+							},
+							{
+								"type": "item",
+								"name": "Fiery Sphere",
+								"entries": [
+									"A 10-foot diameter sphere of fire appears in an unoccupied space of Strahd's choice within 60 feet that he can see until initiative count 20 on the following round. Any creature that starts its turn within 5 feet of the sphere must succeed on a {@dc 20} Dexterity saving throw or take {@h}14 ({@damage 4d6}) fire damage. The sphere ignites flammable objects not being worn or carried, and it sheds bright light in a 30-foot radius and dim light for an additional 30 feet."
+								]
+							}
+						]
+					},
+					"While outdoors, if the players have not yet reconsecrated the Swamp Fane, Strahd can take lair actions as long as he isn't {@condition incapacitated}.",
+					"On initiative count 20 (losing initiative ties), Strahd can take one of the following lair action options, or forgo using any of them in that round:",
+					{
+						"type": "list",
+						"style": "list-hang-notitle",
+						"items": [
+							{
+								"type": "item",
+								"name": "Control Water (requires Swamp Fane)",
+								"entries": [
+									"Strahd casts or uses {@spell control water} without components or concentration."
+								]
+							},
+							{
+								"type": "item",
+								"name": "Fog Cloud (requires Swamp Fane)",
+								"entries": [
+									"Strahd casts {@spell fog cloud} at 5th level without components or concentration. While the fog remains, Strahd has blindsight out to its edges."
 								]
 							}
 						]
@@ -579,12 +580,35 @@
 					{
 						"type": "image",
 						"href": {
-							"type": "internal",
-							"path": "bestiary/CoS/153-636988936829621698.webp"
+							"type": "external",
+							"url": "https://i.imgur.com/LZTOe71.png"
 						}
 					}
 				]
-			}
+			},
+			"damageTagsLegendary": [
+				"B",
+				"F"
+			],
+			"savingThrowForcedLegendary": [
+				"dexterity",
+				"strength",
+				"wisdom"
+			],
+			"damageTags": [
+				"N"
+			],
+			"damageTagsSpell": [
+				"L"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"strength"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
+			]
 		},
 		{
 			"name": "Strahd, the Soldier",
@@ -790,17 +814,12 @@
 				"GI",
 				"I"
 			],
-			"damageTags": [
-				"N",
-				"S",
-				"T"
-			],
 			"miscTags": [
-				"AOE",
-				"MLW",
 				"MW",
+				"MLW",
 				"RA",
-				"THW"
+				"THW",
+				"AOE"
 			],
 			"conditionInflict": [
 				"prone",
@@ -810,18 +829,12 @@
 				"invisible",
 				"unconscious"
 			],
-			"savingThrowForced": [
-				"dexterity",
-				"strength"
-			],
 			"savingThrowForcedLegendary": [
 				"charisma"
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
 			"fluff": {
-				"name": "Strahd von Zarovich",
-				"source": "CoS",
 				"entries": [
 					{
 						"type": "entries",
@@ -922,23 +935,43 @@
 						]
 					},
 					{
-						"type": "entries",
-						"entries": [
+						"type": "list",
+						"style": "list-hang-notitle",
+						"items": [
 							{
-								"type": "entries",
-								"name": "Lair Actions",
+								"type": "item",
+								"name": "Ghostly Hands",
 								"entries": [
-									"While Strahd is in Castle Ravenloft, he can take lair actions as long as he isn't {@condition incapacitated}.",
-									"On initiative count 20 (losing initiative ties), Strahd can take one of the following lair action options, or forgo using any of them in that round:",
-									{
-										"type": "list",
-										"items": [
-											"Until initiative count 20 of the next round, Strahd can pass through solid walls, doors, ceilings, and floors as if they weren't there.",
-											"Strahd targets any number of doors and windows that he can see, causing each one to either open or close as he wishes. Closed doors can be magically locked (needing a successful {@dc 20} Strength check to force open) until Strahd chooses to end the effect, or until Strahd uses this lair action again.",
-											"Strahd summons the angry spirit of one who has died in the castle. The apparition appears next to a hostile creature that Strahd can see, makes an attack against that creature, and then disappears. The apparition has the statistics of a {@creature specter}.",
-											"Strahd targets one Medium or smaller creature that casts a shadow. The target's shadow must be visible to Strahd and within 30 feet of him. If the target fails a {@dc 17} Charisma saving throw, its shadow detaches from it and becomes a {@creature shadow} that obeys Strahd's commands, acting on initiative count 20. A {@spell greater restoration} spell or a {@spell remove curse} spell cast on the target restores its natural shadow, but only if its undead shadow has been destroyed."
-										]
-									}
+									"All non-undead creatures in a 10-foot square starting from a point within 60 feet must succeed on a {@dc 20} Strength saving throw or be {@condition restrained} by grasping ghostly hands until initiative count 20 on the following round"
+								]
+							},
+							{
+								"type": "item",
+								"name": "Fog Bank",
+								"entries": [
+									"A 40-foot radius sphere of fog appears centered on a point within 60 feet of Strahd that he can see. The sphere spreads around corners, and its area is heavily obscured. It lasts until initiative count 20 on the following round or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it. When the fog appears, Strahd can immediately take the Hide action as a reaction and move up to his speed."
+								]
+							}
+						]
+					},
+					"While outdoors, if the players have not yet reconsecrated the Forest Fane, Strahd can take lair actions as long as he isn't {@condition incapacitated}.",
+					"On initiative count 20 (losing initiative ties), Strahd can take one of the following lair action options, or forgo using any of them in that round:",
+					{
+						"type": "list",
+						"style": "list-hang-notitle",
+						"items": [
+							{
+								"type": "item",
+								"name": "Plant Growth (requires Forest Fane)",
+								"entries": [
+									"Strahd casts {@spell plant growth} without components or concentration."
+								]
+							},
+							{
+								"type": "item",
+								"name": "Wrath of Nature (requires Forest Fane)",
+								"entries": [
+									"Strahd casts {@spell wrath of nature} without components or concentration. When he casts it in this way, Strahd can’t use the spell’s {@b rocks} effect."
 								]
 							}
 						]
@@ -948,12 +981,21 @@
 					{
 						"type": "image",
 						"href": {
-							"type": "internal",
-							"path": "bestiary/CoS/153-636988936829621698.webp"
+							"type": "external",
+							"url": "https://2014.5e.tools/img/bestiary/CoS/153-636988936829621698.webp"
 						}
 					}
 				]
-			}
+			},
+			"damageTags": [
+				"N",
+				"S",
+				"T"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			]
 		},
 		{
 			"name": "Strahd, the Vampire",
@@ -1172,18 +1214,14 @@
 				"GI",
 				"I"
 			],
-			"damageTags": [
-				"N",
-				"O"
-			],
 			"damageTagsLegendary": [
 				"B",
 				"F"
 			],
 			"miscTags": [
-				"AOE",
+				"MW",
 				"HPR",
-				"MW"
+				"AOE"
 			],
 			"conditionInflict": [
 				"charmed",
@@ -1192,10 +1230,6 @@
 			"conditionInflictSpell": [
 				"invisible",
 				"unconscious"
-			],
-			"savingThrowForced": [
-				"dexterity",
-				"wisdom"
 			],
 			"savingThrowForcedLegendary": [
 				"dexterity",
@@ -1208,8 +1242,6 @@
 			"hasFluff": true,
 			"hasFluffImages": true,
 			"fluff": {
-				"name": "Strahd von Zarovich",
-				"source": "CoS",
 				"entries": [
 					{
 						"type": "entries",
@@ -1310,23 +1342,43 @@
 						]
 					},
 					{
-						"type": "entries",
-						"entries": [
+						"type": "list",
+						"style": "list-hang-notitle",
+						"items": [
 							{
-								"type": "entries",
-								"name": "Lair Actions",
+								"type": "item",
+								"name": "Deluge of Blood",
 								"entries": [
-									"While Strahd is in Castle Ravenloft, he can take lair actions as long as he isn't {@condition incapacitated}.",
-									"On initiative count 20 (losing initiative ties), Strahd can take one of the following lair action options, or forgo using any of them in that round:",
-									{
-										"type": "list",
-										"items": [
-											"Until initiative count 20 of the next round, Strahd can pass through solid walls, doors, ceilings, and floors as if they weren't there.",
-											"Strahd targets any number of doors and windows that he can see, causing each one to either open or close as he wishes. Closed doors can be magically locked (needing a successful {@dc 20} Strength check to force open) until Strahd chooses to end the effect, or until Strahd uses this lair action again.",
-											"Strahd summons the angry spirit of one who has died in the castle. The apparition appears next to a hostile creature that Strahd can see, makes an attack against that creature, and then disappears. The apparition has the statistics of a {@creature specter}.",
-											"Strahd targets one Medium or smaller creature that casts a shadow. The target's shadow must be visible to Strahd and within 30 feet of him. If the target fails a {@dc 17} Charisma saving throw, its shadow detaches from it and becomes a {@creature shadow} that obeys Strahd's commands, acting on initiative count 20. A {@spell greater restoration} spell or a {@spell remove curse} spell cast on the target restores its natural shadow, but only if its undead shadow has been destroyed."
-										]
-									}
+									"A wave of blood explodes outward from a point Strahd can see within 60 feet. Each creature within 10 feet of that point must make a {@dc 20}  Strength saving throw. On a failure, a creature takes 7 ({@damage 2d6}) bludgeoning damage and is pushed 10 feet away from the point and knocked {@condition prone}. The creature is also {@condition blinded} until initiative count 20 on the next round."
+								]
+							},
+							{
+								"type": "item",
+								"name": "Wails of the Damned",
+								"entries": [
+									"Strahd summons an ethereal torrent of shrieking specters in a 5-foot radius centered on a point within 60 feet that he can see. Each creature in that area must make a {@dc 20} Wisdom saving throw or be frightened of Strahd until initiative count 20 on the next round. A creature frightened in this way is {@condition paralyzed}."
+								]
+							}
+						]
+					},
+					"While outdoors, if the players have not yet reconsecrated the Mountain Fane, Strahd can take lair actions as long as he isn't {@condition incapacitated}.",
+					"On initiative count 20 (losing initiative ties), Strahd can take one of the following lair action options, or forgo using any of them in that round:",
+					{
+						"type": "list",
+						"style": "list-hang-notitle",
+						"items": [
+							{
+								"type": "item",
+								"name": "Change Weather (requires Mountain Fane)",
+								"entries": [
+									"Strahd casts or uses {@spell control weather} as an action without concentration or components. When he does, he can change any number of weather conditions to any of the stages given."
+								]
+							},
+							{
+								"type": "item",
+								"name": "Call Lightning (requires Mountain Fane).",
+								"entries": [
+									"Strahd casts or uses {@spell call lightning} without components or concentration. Whenever he rolls lightning damage with this spell while outdoors in a storm, he deals maximum damage, instead of rolling."
 								]
 							}
 						]
@@ -1336,12 +1388,20 @@
 					{
 						"type": "image",
 						"href": {
-							"type": "internal",
-							"path": "bestiary/CoS/153-636988936829621698.webp"
+							"type": "external",
+							"url": "https://i.imgur.com/IP1OUwU.png"
 						}
 					}
 				]
-			}
+			},
+			"damageTags": [
+				"N",
+				"O"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"wisdom"
+			]
 		}
 	]
 }
