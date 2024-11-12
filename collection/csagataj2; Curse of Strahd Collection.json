@@ -786,10 +786,6 @@
 				"name": "Strahd, the Soldier",
 				"source": "CurseofStrahdCollection"
 			},
-			"token": {
-				"name": "Strahd von Zarovich",
-				"source": "CoS"
-			},
 			"attachedItems": [
 				"longsword|phb"
 			],
@@ -828,9 +824,6 @@
 			"conditionInflictSpell": [
 				"invisible",
 				"unconscious"
-			],
-			"savingThrowForcedLegendary": [
-				"charisma"
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
@@ -982,10 +975,14 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://2014.5e.tools/img/bestiary/CoS/153-636988936829621698.webp"
+							"url": "https://i.ibb.co/GcL1NTp/strahd-soldierwebp.webp"
 						}
 					}
 				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.ibb.co/YB9qm4z/strahd-soldier.webp"
 			},
 			"damageTags": [
 				"N",
@@ -994,6 +991,9 @@
 			],
 			"savingThrowForced": [
 				"dexterity",
+				"strength"
+			],
+			"savingThrowForcedLegendary": [
 				"strength"
 			]
 		},
@@ -1188,10 +1188,6 @@
 			"legendaryGroup": {
 				"name": "Strahd, the Vampire",
 				"source": "CurseofStrahdCollection"
-			},
-			"token": {
-				"name": "Strahd von Zarovich",
-				"source": "CoS"
 			},
 			"traitTags": [
 				"Legendary Resistances",
@@ -1393,6 +1389,10 @@
 						}
 					}
 				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.ibb.co/xF4WCQH/strahd-vampire.webp"
 			},
 			"damageTags": [
 				"N",
