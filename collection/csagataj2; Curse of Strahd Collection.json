@@ -15,8 +15,17 @@
 				]
 			}
 		],
-		"dateAdded": 1731234550,
-		"dateLastModified": 1731234550
+		"dateAdded": 1661975645,
+		"dateLastModified": 1731234550,
+		"dependencies": {
+			"monster": [
+				"MM",
+				"VGM"
+			]
+		},
+		"internalCopies": [
+			"monster"
+		]
 	},
 	"siteVersion": "1.210.13",
 	"legendaryGroup": [
@@ -1402,6 +1411,139 @@
 				"dexterity",
 				"wisdom"
 			]
+		},
+		{
+			"name": "Leo Dilisnya",
+			"source": "CurseofStrahdCollection",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item half plate armor|PHB|half plate}",
+						"{@item shield|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 90,
+				"formula": "12d8 + 36"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 17,
+			"int": 14,
+			"wis": 11,
+			"cha": 9,
+			"passive": 10,
+			"resist": [
+				"necrotic",
+				"radiant",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"preNote": "nonmagical"
+				}
+			],
+			"languages": [
+				"Common plus any one language"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Beyond Death (2/Day)",
+					"entries": [
+						"When Leo is reduced to 0 hit points by an attack that isn't a critical hit, and the zealot is not killed outright, it can choose to fall to 1 hit point instead."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"When Leo fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Reckless",
+					"entries": [
+						"At the start of its turn, Leo can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Leo makes two attacks with Dawn Star."
+					]
+				},
+				{
+					"name": "Dawn Star",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage, plus 7 ({@damage 2d6}) radiant damage. Additionally, if the target is a creature, it must succeed on a {@dc 10} Charisma saving throw or begin shedding bright light in a 10 foot radius and dim light for 10 feet beyond that. The glowing light grants advantage on attack rolls against the target, and it lasts until the start of the target's next turn. This is a magic weapon."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Reckless"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					"The Dilisnya family was one of the wealthiest banners pledged to the von Zarovich cause. They served under Barov for decades, and Leo’s brother Reinhold took up that pledge after their father passed. Leo, however, thinks that Strahd is a cruel, senseless warlord and a danger to his people.",
+					"Leo is boisterous and cocky, and even in the heat of a fight will not be found without colorful robes and a gaudy, golden lion head necklace that he had commissioned."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.postimg.cc/pdfS2fxF/leo.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.postimg.cc/pdfS2fxF/leo.jpg"
+			},
+			"shortName": "Leo",
+			"damageTags": [
+				"P",
+				"R"
+			],
+			"savingThrowForced": [
+				"charisma"
+			]
 		}
-	]
+	],
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"spell": []
 }
