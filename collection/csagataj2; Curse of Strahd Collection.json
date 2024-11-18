@@ -401,10 +401,6 @@
 				"name": "Strahd, the Mage",
 				"source": "CurseofStrahdCollection"
 			},
-			"token": {
-				"name": "Strahd von Zarovich",
-				"source": "CoS"
-			},
 			"traitTags": [
 				"Legendary Resistances",
 				"Regeneration",
@@ -595,20 +591,19 @@
 					}
 				]
 			},
-			"damageTagsLegendary": [
-				"B",
-				"F"
-			],
-			"savingThrowForcedLegendary": [
-				"dexterity",
-				"strength",
-				"wisdom"
-			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.ibb.co/8bWQDZt/Strahd-mage-profile.webp"
+			},
 			"damageTags": [
 				"N"
 			],
 			"damageTagsSpell": [
 				"L"
+			],
+			"damageTagsLegendary": [
+				"B",
+				"F"
 			],
 			"savingThrowForced": [
 				"constitution",
@@ -616,6 +611,11 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity",
+				"wisdom"
+			],
+			"savingThrowForcedLegendary": [
+				"dexterity",
+				"strength",
 				"wisdom"
 			]
 		},
@@ -1682,10 +1682,6 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
-			"token": {
-				"name": "War Priest",
-				"source": "MPMM"
-			},
 			"fluff": {
 				"entries": [
 					"War priests worship deities of war, protection, and strategy. They plan tactics, lead soldiers into battle, confront enemy spellcasters, and tend to casualties. A war priest might command an army or serve as the right hand of a {@creature warlord|MPMM} (appears in {@book this book|MPMM}) on the battlefield.",
@@ -1747,6 +1743,11 @@
 					}
 				]
 			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.ibb.co/HTxCQJ5/gabriel-profile.png"
+			},
+			"isNpc": true,
 			"damageTags": [
 				"R"
 			],
@@ -1970,6 +1971,7 @@
 					}
 				]
 			},
+			"isNpc": true,
 			"damageTags": [
 				"B",
 				"R"
