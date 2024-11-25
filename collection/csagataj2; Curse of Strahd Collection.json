@@ -2132,6 +2132,751 @@
 				"P",
 				"S"
 			]
+		},
+		{
+			"name": "Paladin of Argynvost",
+			"source": "CurseofStrahdCollection",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				{
+					"alignment": [
+						"L",
+						"NX",
+						"C",
+						"G"
+					]
+				},
+				{
+					"alignment": [
+						"G"
+					]
+				}
+			],
+			"alignmentPrefix": "typically ",
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item chain mail|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 27,
+				"formula": "5d8 + 5"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 10,
+			"con": 12,
+			"int": 13,
+			"wis": 16,
+			"cha": 13,
+			"skill": {
+				"medicine": "+7",
+				"persuasion": "+3",
+				"religion": "+3"
+			},
+			"passive": 13,
+			"languages": [
+				"any two languages"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Paladin of Argynvost is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It has the following cleric spells prepared."
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}",
+								"{@spell mending}",
+								"{@spell spare the dying}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell cure wounds}",
+								"{@spell guiding bolt}",
+								"{@spell sanctuary}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell lesser restoration}",
+								"{@spell spiritual weapon}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell mass healing word}",
+								"{@spell spirit guardians}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Mace",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Preserve Life (Recharges after a Short or Long Rest)",
+					"entries": [
+						"The Paladin of Argynvost targets up to six creatures it can see within 30 feet. The Paladin of Argynvost heals the targets, dividing up to 30 hit points between them."
+					]
+				}
+			],
+			"languageTags": [
+				"X"
+			],
+			"spellcastingTags": [
+				"CC",
+				"CP"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"attachedItems": [
+				"mace|phb"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.ibb.co/kML83jF/k-p.png"
+			},
+			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
+				"N",
+				"O",
+				"R"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Aleksandra Gwilym",
+			"source": "CurseofStrahdCollection",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|PHB|plate}"
+					]
+				}
+			],
+			"hp": {
+				"average": 135,
+				"formula": "18d8 + 54"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 22,
+			"dex": 10,
+			"con": 16,
+			"int": 12,
+			"wis": 10,
+			"cha": 10,
+			"skill": {
+				"athletics": "+9",
+				"history": "+4",
+				"special": "{@item painter's tools|phb} {@d20 4}"
+			},
+			"passive": 10,
+			"languages": [
+				"any three languages"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Action Surge (Recharges after a Short or Long Rest)",
+					"entries": [
+						"After taking an action on its turn, the Aleksandra can take one additional action."
+					]
+				},
+				{
+					"name": "Maneuvers (1/Turn)",
+					"entries": [
+						"When the Aleksandra hits with a melee weapon attack, it can choose to apply a maneuver to that attack. The attack deals an additional 5 ({@damage 1d10}) damage, and the Aleksandra chooses one of the following effects."
+					]
+				},
+				{
+					"name": "Disarming Attack",
+					"entries": [
+						"The target must succeed on a {@dc 17} Strength saving throw or drop an object it is holding of the Aleksandra's choice. The object lands at its feet."
+					]
+				},
+				{
+					"name": "Distracting Strike",
+					"entries": [
+						"The next attack roll against the target by an attacker other than the Aleksandra has advantage if that attack is made before the start of the Aleksandra's next turn."
+					]
+				},
+				{
+					"name": "Trip Attack",
+					"entries": [
+						"If the target is Large or smaller, it must succeed on a {@dc 17} Strength saving throw or fall {@condition prone}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Aleksandra makes three melee weapon attacks."
+					]
+				},
+				{
+					"name": "Longsword of Unnatural Strength",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d8 + 6}) slashing damage, or 11 ({@damage 1d10 + 6}) slashing damage if used with two hands to make a melee attack. This is a magic weapon. While attuned to this sword, the wielder's Strengh is increased by 2, potentially above the maximum of 20."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"X"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone"
+			],
+			"variant": [
+				{
+					"type": "inset",
+					"name": "Battlemaster Maneuvers",
+					"entries": [
+						"You can give battlemaster maneuvers to any fighter or any NPC that relies on physical weapons. When giving an NPC a maneuver, remember that save DC is calculated as proficiency bonus plus 8 plus modifier.",
+						"Don't forget that, for NPCs, proficiency is tied to challenge rating, not class level. Check the DMG guide (pgs. 274-282).",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Commander's Strike {@recharge 5}.",
+									"entry": "As a bonus action, the battlemaster chooses one friendly creature within 30 feet of it that can see and hear it. That creature can immediately use its reaction to make one weapon attack."
+								},
+								{
+									"type": "item",
+									"name": "Disarming Strike (1/Turn).",
+									"entry": "When the battlemaster hits a creature with a melee weapon attack, the target must succeed on a Strength saving throw (DC battlemaster's Strength). On a failed save, the target drops the object, which lands at its feet."
+								},
+								{
+									"type": "item",
+									"name": "Feint.",
+									"entry": "As a bonus action, the battlemaster targets one creature within 5 feet of it. The battlemaster has advantage on its next attack roll against that creature before the end of the battlemaster's turn."
+								},
+								{
+									"type": "item",
+									"name": "Goading Strike (1/Turn).",
+									"entry": "When the battlemaster hits a creature with a weapon attack, the target must succeed on a Wisdom saving throw (DC battlemaster's Strength) or incur disadvantage on all attack rolls against targets other than the battlemaster until the end of the battlemaster's next turn."
+								},
+								{
+									"type": "item",
+									"name": "Lunge (1/Turn).",
+									"entry": "The battlemaster extends the reach of its melee weapon attack by 5 feet."
+								},
+								{
+									"type": "item",
+									"name": "Maneuver.",
+									"entry": "The battlemaster commands a friendly creature within 30 feet of it that can see and hear it to immediately use its reaction to move up to its speed without provoking opportunity attacks."
+								},
+								{
+									"type": "item",
+									"name": "Menacing Strike (1/Turn).",
+									"entry": "When the battlemaster hits a creature with a melee weapon attack, the target must succeed on a Wisdom saving throw (DC battlemaster's Strength) or become {@condition frightened} of the battlemaster until the end of the battlemaster's next turn."
+								},
+								{
+									"type": "item",
+									"name": "Parry (Reaction).",
+									"entry": "The battlemaster adds its proficiency bonus to its AC against one melee attack that would hit it. To do so, the battlemaster must see the attacker and be wielding a melee weapon."
+								},
+								{
+									"type": "item",
+									"name": "Pushing Strike (1/Turn).",
+									"entry": "When the battlemaster hits a creature with a melee weapon attack, the target must succeed on a Wisdom saving throw (DC battlemaster's Strength) or be pushed up to 15 feet away from the battlemaster."
+								},
+								{
+									"type": "item",
+									"name": "Rally {@recharge 5}.",
+									"entry": "As a bonus action, the battlemaster chooses up to 3 friendly creatures within 30 feet of it that can see and hear it. Each target gains 5 ({@dice 1d6 + 2}) temporary hit points."
+								},
+								{
+									"type": "item",
+									"name": "Riposte (Reaction).",
+									"entry": "When a creature misses the battlemaster with a melee attack, the battlemaster makes a melee weapon attack against the attacker."
+								},
+								{
+									"type": "item",
+									"name": "Cleave (1/Turn).",
+									"entry": "When the battlemaster hits a creature with a melee weapon attack, the target can choose another creature within 5 feet of the original target. The battlemaster makes an additional attack against the new target."
+								},
+								{
+									"type": "item",
+									"name": "Tripping Strike (1/Turn).",
+									"entry": "When the battlemaster hits a creature with a melee weapon attack, the target must succeed on a Wisdom saving throw (DC battlemaster's Strength) or fall {@condition prone}."
+								}
+							]
+						}
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.ibb.co/LvbcJbY/Alek.png"
+			},
+			"damageTags": [
+				"S"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		},
+		{
+			"name": "Sergei von Zarovich",
+			"source": "CurseofStrahdCollection",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"cleric"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb|plate}"
+					]
+				}
+			],
+			"hp": {
+				"average": 117,
+				"formula": "18d8 + 36"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 14,
+			"int": 11,
+			"wis": 17,
+			"cha": 13,
+			"save": {
+				"con": "+6",
+				"wis": "+7"
+			},
+			"skill": {
+				"intimidation": "+5",
+				"religion": "+4"
+			},
+			"passive": 13,
+			"languages": [
+				"any two languages"
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Sergei casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 15}):"
+					],
+					"will": [
+						"{@spell light}",
+						"{@spell spare the dying}",
+						"{@spell thaumaturgy}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell banishment}",
+							"{@spell command}",
+							"{@spell dispel magic}",
+							"{@spell flame strike}",
+							"{@spell guardian of faith}",
+							"{@spell hold person}",
+							"{@spell lesser restoration}",
+							"{@spell revivify}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Sergei makes two Maul attacks, and it uses Holy Fire."
+					]
+				},
+				{
+					"name": "Maul",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) bludgeoning damage  plus {@h}10 ({@damage 3d6}) radiant damage."
+					]
+				},
+				{
+					"name": "Holy Fire",
+					"entries": [
+						"The Sergei targets one creature it can see within 60 feet of it. The target must make a {@dc 15} Wisdom saving throw. On a failed save, the target takes 12 ({@damage 2d8 + 3}) radiant damage, and it is {@condition blinded} until the start of the war priest's next turn. On a successful save, the target takes half as much damage and isn't {@condition blinded}."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Healing Light {@recharge 4}",
+					"entries": [
+						"The Sergei or one creature of its choice within 60 feet of it regains 12 ({@dice 2d8 + 3}) hit points."
+					]
+				}
+			],
+			"environment": [
+				"desert",
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://2014.5e.tools/audio/bestiary/war-priest.mp3"
+			},
+			"attachedItems": [
+				"maul|phb"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"X"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"conditionInflictSpell": [
+				"incapacitated",
+				"paralyzed",
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://2014.5e.tools/img/bestiary/MPMM/War Priest.webp"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.ibb.co/2M5dfWN/Sergei.png"
+			},
+			"damageTags": [
+				"B",
+				"R"
+			],
+			"damageTagsSpell": [
+				"F",
+				"R"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Patrina Velikovna",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CurseofStrahdCollection",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "elf",
+						"prefix": "Dusk"
+					}
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"hasFluffImages": true,
+			"size": [
+				"M"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 99,
+				"formula": "18d8 + 18"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 12,
+			"int": 20,
+			"wis": 15,
+			"cha": 16,
+			"save": {
+				"int": "+9",
+				"wis": "+6"
+			},
+			"skill": {
+				"arcana": "+13",
+				"history": "+13"
+			},
+			"passive": 12,
+			"resist": [
+				{
+					"special": "damage from spells"
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "(from stoneskin)",
+					"cond": true,
+					"preNote": "nonmagical"
+				}
+			],
+			"languages": [
+				"any six languages"
+			],
+			"cr": "12",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Patrina is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 17}, {@hit 9} to hit with spell attacks). Patrina can cast {@spell disguise self} and {@spell invisibility} at will and has the following wizard spells prepared:"
+					],
+					"will": [
+						"{@spell disguise self}",
+						"{@spell invisibility}"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}",
+								"{@spell shocking grasp}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell identify}",
+								"{@spell mage armor}*",
+								"{@spell magic missile}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell detect thoughts}",
+								"{@spell mirror image}",
+								"{@spell misty step}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fly}",
+								"{@spell lightning bolt}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell banishment}",
+								"{@spell fire shield}",
+								"{@spell stoneskin}*"
+							]
+						},
+						"5": {
+							"slots": 3,
+							"spells": [
+								"{@spell cone of cold}",
+								"{@spell scrying}",
+								"{@spell wall of force}"
+							]
+						},
+						"6": {
+							"slots": 1,
+							"spells": [
+								"{@spell globe of invulnerability}"
+							]
+						},
+						"7": {
+							"slots": 1,
+							"spells": [
+								"{@spell teleport}"
+							]
+						},
+						"8": {
+							"slots": 1,
+							"spells": [
+								"{@spell mind blank}*"
+							]
+						},
+						"9": {
+							"slots": 1,
+							"spells": [
+								"{@spell time stop}"
+							]
+						}
+					},
+					"footerEntries": [
+						"*Patrina casts these spells on itself before combat."
+					],
+					"ability": "int",
+					"hidden": [
+						"will"
+					]
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Patrina has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				}
+			],
+			"attachedItems": [
+				"dagger|phb"
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"languageTags": [
+				"X"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"MLW",
+				"THW"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.ibb.co/mB1HmhY/Patrina2.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.ibb.co/mB1HmhY/Patrina2.jpg"
+			},
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"C",
+				"F",
+				"L",
+				"O"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
 		}
 	],
 	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json"
