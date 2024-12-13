@@ -756,7 +756,7 @@
 				{
 					"name": "Umbral Net",
 					"entries": [
-						"{@atk rs} {@hit +12} to hit, range 30/60 ft., one creature. {@h} 7 (@damage {@dice 2d6}}) necrotic damage and the target is {@condition restrained} until the start of Strahd’s next turn."
+						"{@atk rs} {@hit +12} to hit, range 30/60 ft., one creature. {@h} 7 ({@damage 2d6}) necrotic damage and the target is {@condition restrained} until the start of Strahd’s next turn."
 					]
 				}
 			],
