@@ -25,9 +25,9 @@
 		},
 		"internalCopies": [
 			"monster"
-		]
+		],
+		"edition": "classic"
 	},
-	"siteVersion": "1.210.13",
 	"legendaryGroup": [
 		{
 			"name": "Strahd, the Mage",
